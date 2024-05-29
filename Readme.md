@@ -26,7 +26,7 @@ Git
 
 # Framework set up
 
-Fork / Clone repository from [here](www.github.com/eyupUK/taskName) or download zip and set it up in your local workspace.
+Fork / Clone repository from [here](https://github.com/eyupUK/cloudautomationtesting.git) or download zip and set it up in your local workspace.
 
 ## Framework Overview
 

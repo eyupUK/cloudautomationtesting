@@ -6,7 +6,6 @@
  */
 package com.automation_ui.utilities;
 
-import org.openqa.selenium.MutableCapabilities;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -42,9 +41,9 @@ public class Driver {
     public static WebDriver get() {
 
         if (driver == null) {
-            String browserConfig = ConfigurationReader.get("browser");
+            String browser = System.getProperty("browser") != null ? browser = System.getProperty("browser") : ConfigurationReader.get("browser");
             synchronized (Driver.class) {
-                switch (browserConfig) {
+                switch (browser) {
                     case "chrome-local" -> {
                         System.setProperty("webdriver.chrome.driver", "browserdriver/chromedriver");
                         driver = new ChromeDriver();
