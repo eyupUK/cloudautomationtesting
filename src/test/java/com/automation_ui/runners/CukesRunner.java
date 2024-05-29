@@ -27,7 +27,7 @@ import org.junit.runner.RunWith;
          *
         */
         plugin = {
-                "pretty", "io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm",
+                "pretty", "io.qameta.allure.cucumber6jvm.AllureCucumber6Jvm",
                 "json:target/cucumber.json",
                 "html:target/cucumber-report.html",
                 "rerun:target/rerun.txt",
